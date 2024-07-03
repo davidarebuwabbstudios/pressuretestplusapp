@@ -1,5 +1,0 @@
-#import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_PressureTestPlusApp_PressureTestPlusAppTests : NSObject
-@end
-@implementation PodsDummy_Pods_PressureTestPlusApp_PressureTestPlusAppTests
-@end
