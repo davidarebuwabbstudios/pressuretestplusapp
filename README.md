@@ -1,8 +1,12 @@
 ## PressureTest+ App
  
+![Pressure Test + Logo](https://github.com/user-attachments/assets/44bf5749-487a-49db-bacc-24ca645d2043)
+
+## Description
+PressureTest+ is the official application for Stopper Specialists Bluetooth pressure loggers. Performs Type One & Type Two hydrostatic pressure tests from the palm of your hand.
 
 ## Project Status
-PressureTest+ is the official application for Stopper Specialists Bluetooth pressure loggers. Performs Type One & Type Two hydrostatic pressure tests from the palm of your hand.
+In Development
 
 # Getting Started
 
