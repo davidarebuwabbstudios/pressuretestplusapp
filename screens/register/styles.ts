@@ -35,6 +35,20 @@ const styles = StyleSheet.create({
     shadowRadius: 1,
     elevation: 1,
 },
+
+textAlt: {
+    color: "#6F8E42",
+    fontSize: 15,
+    alignSelf: 'center'
+},
+
+view3: {
+    paddingVertical: 10,
+    paddingHorizontal: 14,
+    marginBottom: 16,
+    justifyContent: 'center',
+    alignContent: 'center'
+},
 });
 
 export default styles;

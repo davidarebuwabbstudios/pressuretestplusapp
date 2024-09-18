@@ -2,6 +2,7 @@ import * as React from "react";
 import { View, Text } from "react-native";
 import { TextInput, Button } from "react-native-paper";
 import AuthWrapper from "../../components/auth-wrapper/AuthWrapper";
+import InputText from "../../components/input-text/InputText";
 import styles from "./styles";
 import type { NativeStackScreenProps } from "@react-navigation/native-stack";
 
@@ -14,24 +15,14 @@ type Props = NativeStackScreenProps<RootStackParamList, "Home">;
 function RegisterScreen({navigation}: Props) {
   return (
     <AuthWrapper>
-      <View style={styles.view}>
-        <TextInput label={"First Name"} style={styles.text} />
-      </View>
-      <View style={styles.view}>
-        <TextInput label={"Surname"} style={styles.text} />
-      </View>
-      <View style={styles.view}>
-        <TextInput label={"Telephone Number"} style={styles.text} />
-      </View>
-      <View style={styles.view}>
-        <TextInput label={"Email Address"} style={styles.text} />
-      </View>
-      <View style={styles.view}>
-        <TextInput label={"Password"} style={styles.text} />
-      </View>
-      <View style={styles.view}>
-        <TextInput label={"Confirm Password"} style={styles.text} />
-      </View>
+      <>
+      <InputText label="First Name" />
+      <InputText label="Surname" />
+      <InputText label="Telephone Number" />
+      <InputText label="Email Address" />
+      <InputText label="Password" />
+      <InputText label="Confirm Password" />
+      </>
       <View style={styles.view2}>
         <Button
           style={styles.text2}
@@ -40,6 +31,14 @@ function RegisterScreen({navigation}: Props) {
         >
           {"REGISTER"}
         </Button>
+      </View>
+      <View style={styles.view3}>
+        <Text
+          style={styles.textAlt}
+          onPress={() => navigation.goBack()}
+        >
+          Already Registered? Login
+        </Text>
       </View>
     </AuthWrapper>
   );

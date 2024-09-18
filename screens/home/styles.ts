@@ -32,8 +32,8 @@ const styles = StyleSheet.create({
 		borderColor: "#0000003B",
 		borderRadius: 4,
 		borderWidth: 1,
-		paddingVertical: 10,
-		paddingHorizontal: 14,
+		paddingVertical: 0,
+		paddingHorizontal: 12,
 		marginBottom: 16,
         justifyContent: 'center'
 	},
@@ -41,8 +41,9 @@ const styles = StyleSheet.create({
 		alignItems: "center",
 		backgroundColor: "#6F8E42",
 		borderRadius: 4,
-		paddingVertical: 15,
-		marginBottom: 16,
+        paddingVertical: 8,
+        paddingHorizontal: 22,		
+        marginBottom: 16,
 		shadowColor: "#00000033",
 		shadowOpacity: 0.2,
 		shadowOffset: {
@@ -56,7 +57,8 @@ const styles = StyleSheet.create({
 		alignItems: "center",
 		backgroundColor: "#FF6600",
 		borderRadius: 4,
-		paddingVertical: 15,
+		paddingVertical: 8,
+        paddingHorizontal: 22,
 		shadowColor: "#00000033",
 		shadowOpacity: 0.2,
 		shadowOffset: {

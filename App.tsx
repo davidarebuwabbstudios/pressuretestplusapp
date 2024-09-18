@@ -31,7 +31,7 @@ function App(): React.JSX.Element {
   return (
     <NavigationContainer onReady={() => BootSplash.hide({fade: true})}>
       <Stack.Navigator>
-        <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} /> 
+        <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'Home'  , headerShown: false }} /> 
         <Stack.Screen name="Register" component={RegisterScreen} options={{ headerShown: false }}  /> 
         <Stack.Screen name="Login" component={LoginScreen} />       
       </Stack.Navigator>
