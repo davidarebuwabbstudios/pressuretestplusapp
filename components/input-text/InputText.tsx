@@ -22,10 +22,17 @@ const InputText: React.FC<CustomTextInputProps> = ({ label, ...props }) => {
     <TextInput
       label={label}
       underlineStyle={{ height: 0 }}
+      selectionColor="#6F8E42"
+      activeOutlineColor="#6F8E42"
       style={{
         color: "black",
         fontSize: 15,
         backgroundColor: "white",
+      }}
+      theme={{
+        colors: {
+          primary: '#6F8E42'
+        },
       }}
     />
     </View>

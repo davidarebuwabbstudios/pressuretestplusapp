@@ -17,8 +17,8 @@ import {
 } from 'react-native';
 
 
-import HomeScreen from './screens/home/HomeScreen';
-import LoginScreen from './screens/login/LoginScreen';
+import HomeScreen from './screens/login/LoginScreen';
+import LoginScreen from './screens/home/HomeScreen';
 import RegisterScreen from './screens/register/RegisterScreen';
 
 
@@ -31,9 +31,9 @@ function App(): React.JSX.Element {
   return (
     <NavigationContainer onReady={() => BootSplash.hide({fade: true})}>
       <Stack.Navigator>
+        <Stack.Screen name="Login" component={LoginScreen} options={{ title: 'Login'  , headerShown: false }} />       
         <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'Home'  , headerShown: false }} /> 
         <Stack.Screen name="Register" component={RegisterScreen} options={{ headerShown: false }}  /> 
-        <Stack.Screen name="Login" component={LoginScreen} />       
       </Stack.Navigator>
     </NavigationContainer>
   );
