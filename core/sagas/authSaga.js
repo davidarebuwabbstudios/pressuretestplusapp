@@ -6,10 +6,13 @@ const { AUTH_USER_REQUEST } = require("../actions/authActions").constants;
 
 function fetchAuth(action) {
     try {
-        yield put(authUserSuccess);
+
+       // yield put(authUserSuccess);
+       console.log('auth success')
     }
     catch (e) {
-        yield put(authUserFailure(e.message));
+        console.log('auth failure', e.message)
+        //yield put(authUserFailure(e.message));
     }
 }
 

@@ -30,9 +30,9 @@ function fetchApi(opts, headers) {
         headers: {
             'Content-Type': 'application/json',
             'X-Requested-With': 'XMLHttpRequest',
-        }
-    }
-};
+        },
+    };
+
 
 if (opts.method.toUpperCase() !== 'GET') {
     options.data = data;
@@ -40,9 +40,11 @@ if (opts.method.toUpperCase() !== 'GET') {
 
 if (!isEmpty(headers)) {
     options.headers = { ...options.headers, ...headers};
+}
 
     return api(options);
 }
+
 
 export {
     getApiUrl,

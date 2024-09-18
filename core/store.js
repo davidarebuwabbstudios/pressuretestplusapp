@@ -1,5 +1,5 @@
 import { createStore, applyMiddleware, compose } from 'redux';
-import { composeWithDevTools} from  "redux-devtools-extension";
+import { composeWithDevTools} from  "@redux-devtools/extension";
 import thunk from "redux-thunk";
 import createSagaMiddleware from "redux-saga";
 import logger from "redux-logger";
@@ -9,6 +9,11 @@ import rootSaga from './sagas';
 const sagaMiddleware = createSagaMiddleware();
 
 //TODO: switch to configure store
+// const store = configureStore({
+//     reducer: rootReducer,
+//     middleware: applyMiddleware(sagaMiddleware, logger)
+//   });
+
 const configureStore = () => {
     const store = createStore(
         rootReducer,
