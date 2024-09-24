@@ -12,6 +12,7 @@
     "update-and-fix": "npm run custom-script && npm audit fix --force"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^2.0.0",
     "@react-navigation/native": "^6.1.17",
     "@react-navigation/native-stack": "^6.11.0",
     "@redux-devtools/extension": "^3.3.0",
@@ -27,6 +28,7 @@
     "react-native-paper": "^5.12.5",
     "react-native-safe-area-context": "^4.11.0",
     "react-native-screens": "^3.0.0",
+    "react-native-toast-message": "^2.2.1",
     "react-native-vector-icons": "^10.2.0",
     "react-redux": "^9.1.2",
     "redux": "^5.0.1",

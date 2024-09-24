@@ -1,7 +1,11 @@
 [
     {
-        "merged": "com.pressuretestplusapp-merged_res-33:/drawable_rn_edit_text_material.xml.flat",
-        "source": "com.pressuretestplusapp-main-35:/drawable/rn_edit_text_material.xml"
+        "merged": "/Users/davidarebuwa/.gradle/daemon/8.6/com.pressuretestplusapp-merged_res-33:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/davidarebuwa/.gradle/daemon/8.6/com.pressuretestplusapp-main-35:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/davidarebuwa/.gradle/daemon/8.6/com.pressuretestplusapp-merged_res-33:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/davidarebuwa/.gradle/daemon/8.6/com.pressuretestplusapp-main-35:/mipmap-xhdpi/ic_launcher.png"
     },
     {
         "merged": "com.pressuretestplusapp-merged_res-33:/drawable-xxxhdpi_bootsplash_logo.png.flat",
@@ -12,40 +16,60 @@
         "source": "com.pressuretestplusapp-main-35:/drawable-hdpi/bootsplash_logo.png"
     },
     {
-        "merged": "com.pressuretestplusapp-merged_res-33:/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "com.pressuretestplusapp-main-35:/mipmap-mdpi/ic_launcher.png"
+        "merged": "/Users/davidarebuwa/.gradle/daemon/8.6/com.pressuretestplusapp-merged_res-33:/drawable-hdpi_bootsplash_logo.png.flat",
+        "source": "/Users/davidarebuwa/.gradle/daemon/8.6/com.pressuretestplusapp-main-35:/drawable-hdpi/bootsplash_logo.png"
     },
     {
-        "merged": "com.pressuretestplusapp-merged_res-33:/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "com.pressuretestplusapp-main-35:/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "/Users/davidarebuwa/.gradle/daemon/8.6/com.pressuretestplusapp-merged_res-33:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/davidarebuwa/.gradle/daemon/8.6/com.pressuretestplusapp-main-35:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/davidarebuwa/.gradle/daemon/8.6/com.pressuretestplusapp-merged_res-33:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/Users/davidarebuwa/.gradle/daemon/8.6/com.pressuretestplusapp-main-35:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/davidarebuwa/.gradle/daemon/8.6/com.pressuretestplusapp-merged_res-33:/drawable-xhdpi_bootsplash_logo.png.flat",
+        "source": "/Users/davidarebuwa/.gradle/daemon/8.6/com.pressuretestplusapp-main-35:/drawable-xhdpi/bootsplash_logo.png"
+    },
+    {
+        "merged": "/Users/davidarebuwa/.gradle/daemon/8.6/com.pressuretestplusapp-merged_res-33:/drawable-xxhdpi_bootsplash_logo.png.flat",
+        "source": "/Users/davidarebuwa/.gradle/daemon/8.6/com.pressuretestplusapp-main-35:/drawable-xxhdpi/bootsplash_logo.png"
     },
     {
         "merged": "com.pressuretestplusapp-merged_res-33:/drawable-xhdpi_bootsplash_logo.png.flat",
         "source": "com.pressuretestplusapp-main-35:/drawable-xhdpi/bootsplash_logo.png"
     },
     {
-        "merged": "com.pressuretestplusapp-merged_res-33:/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "com.pressuretestplusapp-main-35:/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "/Users/davidarebuwa/.gradle/daemon/8.6/com.pressuretestplusapp-merged_res-33:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/davidarebuwa/.gradle/daemon/8.6/com.pressuretestplusapp-main-35:/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.pressuretestplusapp-merged_res-33:/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "com.pressuretestplusapp-main-35:/mipmap-hdpi/ic_launcher.png"
+        "merged": "/Users/davidarebuwa/.gradle/daemon/8.6/com.pressuretestplusapp-merged_res-33:/drawable_rn_edit_text_material.xml.flat",
+        "source": "/Users/davidarebuwa/.gradle/daemon/8.6/com.pressuretestplusapp-main-35:/drawable/rn_edit_text_material.xml"
     },
     {
-        "merged": "com.pressuretestplusapp-merged_res-33:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "com.pressuretestplusapp-main-35:/mipmap-xxxhdpi/ic_launcher_round.png"
+        "merged": "/Users/davidarebuwa/.gradle/daemon/8.6/com.pressuretestplusapp-merged_res-33:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/Users/davidarebuwa/.gradle/daemon/8.6/com.pressuretestplusapp-main-35:/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.pressuretestplusapp-merged_res-33:/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "com.pressuretestplusapp-main-35:/mipmap-xhdpi/ic_launcher.png"
+        "merged": "/Users/davidarebuwa/.gradle/daemon/8.6/com.pressuretestplusapp-merged_res-33:/drawable-xxxhdpi_bootsplash_logo.png.flat",
+        "source": "/Users/davidarebuwa/.gradle/daemon/8.6/com.pressuretestplusapp-main-35:/drawable-xxxhdpi/bootsplash_logo.png"
     },
     {
-        "merged": "com.pressuretestplusapp-merged_res-33:/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "com.pressuretestplusapp-main-35:/mipmap-xxhdpi/ic_launcher_round.png"
+        "merged": "/Users/davidarebuwa/.gradle/daemon/8.6/com.pressuretestplusapp-merged_res-33:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/davidarebuwa/.gradle/daemon/8.6/com.pressuretestplusapp-main-35:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.pressuretestplusapp-merged_res-33:/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "com.pressuretestplusapp-main-35:/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "/Users/davidarebuwa/.gradle/daemon/8.6/com.pressuretestplusapp-merged_res-33:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/davidarebuwa/.gradle/daemon/8.6/com.pressuretestplusapp-main-35:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/davidarebuwa/.gradle/daemon/8.6/com.pressuretestplusapp-merged_res-33:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/davidarebuwa/.gradle/daemon/8.6/com.pressuretestplusapp-main-35:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/davidarebuwa/.gradle/daemon/8.6/com.pressuretestplusapp-merged_res-33:/drawable-mdpi_bootsplash_logo.png.flat",
+        "source": "/Users/davidarebuwa/.gradle/daemon/8.6/com.pressuretestplusapp-main-35:/drawable-mdpi/bootsplash_logo.png"
     },
     {
         "merged": "com.pressuretestplusapp-merged_res-33:/drawable-mdpi_bootsplash_logo.png.flat",
@@ -56,11 +80,7 @@
         "source": "com.pressuretestplusapp-main-35:/drawable-xxhdpi/bootsplash_logo.png"
     },
     {
-        "merged": "com.pressuretestplusapp-merged_res-33:/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "com.pressuretestplusapp-main-35:/mipmap-xxxhdpi/ic_launcher.png"
-    },
-    {
-        "merged": "com.pressuretestplusapp-merged_res-33:/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "com.pressuretestplusapp-main-35:/mipmap-hdpi/ic_launcher_round.png"
+        "merged": "/Users/davidarebuwa/.gradle/daemon/8.6/com.pressuretestplusapp-merged_res-33:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/davidarebuwa/.gradle/daemon/8.6/com.pressuretestplusapp-main-35:/mipmap-xxhdpi/ic_launcher.png"
     }
 ]

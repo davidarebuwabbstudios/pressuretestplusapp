@@ -5,6 +5,8 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import BootSplash from 'react-native-bootsplash';
+import Toast from 'react-native-toast-message';
+
 
 import {
   SafeAreaView,
@@ -29,6 +31,7 @@ function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
 
   return (
+    <>
     <NavigationContainer onReady={() => BootSplash.hide({fade: true})}>
       <Stack.Navigator>
         <Stack.Screen name="Login" component={LoginScreen} options={{ title: 'Login'  , headerShown: false }} />       
@@ -36,6 +39,8 @@ function App(): React.JSX.Element {
         <Stack.Screen name="Register" component={RegisterScreen} options={{ headerShown: false }}  /> 
       </Stack.Navigator>
     </NavigationContainer>
+    <Toast />
+    </>
   );
 }
 

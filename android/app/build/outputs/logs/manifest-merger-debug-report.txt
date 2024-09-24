@@ -5,6 +5,7 @@ MERGED from /Users/davidarebuwa/Desktop/PressureTestPlusApp/android/app/src/main
 INJECTED from /Users/davidarebuwa/Desktop/PressureTestPlusApp/android/app/src/debug/AndroidManifest.xml:2:1-9:12
 INJECTED from /Users/davidarebuwa/Desktop/PressureTestPlusApp/android/app/src/debug/AndroidManifest.xml:2:1-9:12
 INJECTED from /Users/davidarebuwa/Desktop/PressureTestPlusApp/android/app/src/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-async-storage_async-storage] /Users/davidarebuwa/Desktop/PressureTestPlusApp/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-ble-manager] /Users/davidarebuwa/Desktop/PressureTestPlusApp/node_modules/react-native-ble-manager/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-15:12
 MERGED from [:react-native-bootsplash] /Users/davidarebuwa/Desktop/PressureTestPlusApp/node_modules/react-native-bootsplash/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-safe-area-context] /Users/davidarebuwa/Desktop/PressureTestPlusApp/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
@@ -166,6 +167,8 @@ uses-sdk
 INJECTED from /Users/davidarebuwa/Desktop/PressureTestPlusApp/android/app/src/debug/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/davidarebuwa/Desktop/PressureTestPlusApp/android/app/src/debug/AndroidManifest.xml
 INJECTED from /Users/davidarebuwa/Desktop/PressureTestPlusApp/android/app/src/debug/AndroidManifest.xml
+MERGED from [:react-native-async-storage_async-storage] /Users/davidarebuwa/Desktop/PressureTestPlusApp/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-async-storage_async-storage] /Users/davidarebuwa/Desktop/PressureTestPlusApp/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-ble-manager] /Users/davidarebuwa/Desktop/PressureTestPlusApp/node_modules/react-native-ble-manager/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-ble-manager] /Users/davidarebuwa/Desktop/PressureTestPlusApp/node_modules/react-native-ble-manager/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-bootsplash] /Users/davidarebuwa/Desktop/PressureTestPlusApp/node_modules/react-native-bootsplash/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
