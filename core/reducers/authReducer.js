@@ -5,6 +5,9 @@ const {
     AUTH_USER_SUCCESS,
     AUTH_USER_FAILURE,
     GET_AUTH_RESPONSE,
+    REGISTER_USER_REQUEST,
+    REGISTER_USER_SUCCESS,
+    REGISTER_USER_FAILURE,
 } = require('../actions/authActions').constants;
 
 const InitialState = Record({
@@ -47,6 +50,30 @@ export default function authReducer(state = initialState, {type, payload}) {
         }
 
         case AUTH_USER_FAILURE: {
+            return state.set('isFetching', false)
+            .set('isAuthenticated', false)
+            .set('message',payload)
+            .set('error', payload);
+        }
+
+        case REGISTER_USER_REQUEST: { 
+            console.log('REGISTER_USER_REQUEST');
+            return state.set('isFetching', true)
+            .set('error', null);
+        }
+
+        case REGISTER_USER_SUCCESS: {
+            console.log('REGISTER_USER_SUCCEESS');
+            console.log('REGISTER', payload)
+            return state.set('isFetching', false)
+            .set('isAuthenticated',true)
+            .set('userToken', payload.data.token)
+            .set('message',payload.message)
+            .set('data',payload)
+            .set('error', null);
+        }
+
+        case REGISTER_USER_FAILURE: {
             return state.set('isFetching', false)
             .set('isAuthenticated', false)
             .set('message',payload)

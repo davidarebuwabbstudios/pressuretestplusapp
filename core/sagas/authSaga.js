@@ -41,21 +41,23 @@ function* authUser(action) {
 
 function* registerUser(action) {
   try {
-    const { name, email, password, confirmPassword } = action.payload; //onLoginSuccess, onLoginFailure
+    const { firstName, surname, email, password, confirmPassword } = action.payload; //onLoginSuccess, onLoginFailure
     // Make the request to login only if the user is not currently logged in
     //const isLoggedIn = yield select(_isLoggedIn);
     //if(!isLoggedIn){
     const response = yield call(fetchApi, {
       method: "POST",
       body: {
-        name,
+        name: `${firstName} ${surname}`,
         email,
         password,
         c_password: confirmPassword,
       },
-      url: `/register`,
+      url: `${apiUrl}/register`,
     });
+    console.log("response", response.data);
     yield put(registerUserSuccess(response.data));
+    AsyncStorage.setItem("@token", JSON.stringify(response.data.token));
     console.log("auth register success");
   } catch (e) {
     console.log("auth reg failure", e.message);

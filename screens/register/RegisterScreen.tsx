@@ -1,5 +1,7 @@
 import * as React from "react";
 import { View, Text } from "react-native";
+import { useState, useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import { TextInput, Button } from "react-native-paper";
 import AuthWrapper from "../../components/auth-wrapper/AuthWrapper";
 import InputText from "../../components/input-text/InputText";
@@ -8,6 +10,9 @@ import styles from "./styles";
 import { Formik } from "formik";
 import type { NativeStackScreenProps } from "@react-navigation/native-stack";
 import * as Yup from "yup";
+import * as authActions from '../../core/actions/authActions'
+import Toast from 'react-native-toast-message';
+
 
 type RootStackParamList = {
   Home: undefined;
@@ -21,16 +26,24 @@ type RegisterFormValues = {
   telNumber: string;
   email: string;
   password: string;
+  confirmPassword: string;
 };
 
 function RegisterScreen({ navigation }: Props) {
+    const dispatch = useDispatch()
+    const { isAuthenticated, message, data } = useSelector((state) => state.auth); 
   const initialValues: RegisterFormValues = {
     firstName: "",
     surname: "",
     telNumber: "",
     email: "",
     password: "",
+    confirmPassword: "",
   };
+
+  const handleRegister = (values: RegisterFormValues) => {
+    dispatch(authActions.registerUserRequest(values));
+}
 
   const validationSchema = Yup.object().shape({
     firstName: Yup.string().required("First name is required"),
@@ -45,6 +58,25 @@ function RegisterScreen({ navigation }: Props) {
     confirmPassword: Yup.string().required('Confirm password is required').oneOf([Yup.ref('password'), null], 'Passwords must match'),
   });
 
+  const showToast = (type: string, text1: string, text2: string) => {
+    Toast.show({
+      type,
+      text1,
+      text2
+    });
+  }
+
+
+  useEffect(() => {
+    const authenticated = isAuthenticated;
+    console.log('authenticated registereduser', authenticated, message, data)
+    // setIsLoading(authenticated);
+    if(isAuthenticated){
+      showToast('success', `Welcome `, message)
+      navigation.navigate("Home")
+    }
+  }, [isAuthenticated]);
+
   return (
     <AuthWrapper>
       <Formik
@@ -52,7 +84,7 @@ function RegisterScreen({ navigation }: Props) {
         validationSchema={validationSchema}
         onSubmit={(values, actions) => {
           console.log({ values, actions });
-          //alert(JSON.stringify(values, null, 2));
+          handleRegister(values)
           actions.setSubmitting(false);
         }}
       >
