@@ -64,7 +64,6 @@ export default function authReducer(state = initialState, {type, payload}) {
 
         case REGISTER_USER_SUCCESS: {
             console.log('REGISTER_USER_SUCCEESS');
-            console.log('REGISTER', payload)
             return state.set('isFetching', false)
             .set('isAuthenticated',true)
             .set('userToken', payload.data.token)

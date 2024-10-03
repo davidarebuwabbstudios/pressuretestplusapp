@@ -66,7 +66,7 @@ useEffect(() => {
   // setIsLoading(authenticated);
   if(isAuthenticated){
     showToast('success', `Welcome `, message)
-    navigation.navigate("Home")
+    // navigation.navigate("Home")
   }
 }, [isAuthenticated]);
 

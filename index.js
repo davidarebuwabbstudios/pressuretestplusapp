@@ -1,6 +1,4 @@
-/**
- * @format
- */
+import './gesture-handler';
 import React from "react";
 import { AppRegistry } from "react-native";
 import { PaperProvider } from "react-native-paper";
