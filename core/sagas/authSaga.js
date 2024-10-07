@@ -1,5 +1,5 @@
 import { call, put, takeEvery } from "redux-saga/effects";
-import AsyncStorage from "@react-native-async-storage/async-storage";
+//import AsyncStorage from "@react-native-async-storage/async-storage";
 import { fetchApi, getApiUrl } from "./../api";
 import {
   authUserSuccess,
@@ -30,7 +30,7 @@ function* authUser(action) {
     });
     console.log("response", response.data);
     yield put(authUserSuccess(response.data));
-    AsyncStorage.setItem("@token", JSON.stringify(response.data.token));
+    //AsyncStorage.setItem("@token", JSON.stringify(response.data.token));
     console.log("auth login success");
     //onLoginSuccess callback
   } catch (e) {
@@ -57,7 +57,7 @@ function* registerUser(action) {
     });
     console.log("response", response.data);
     yield put(registerUserSuccess(response.data));
-    AsyncStorage.setItem("@token", JSON.stringify(response.data.token));
+    //AsyncStorage.setItem("@token", JSON.stringify(response.data.token));
     console.log("auth register success");
   } catch (e) {
     console.log("auth reg failure", e.message);

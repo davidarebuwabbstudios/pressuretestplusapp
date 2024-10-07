@@ -1,7 +1,8 @@
+'use client'
 import { createStore, applyMiddleware, compose } from 'redux';
 import { composeWithDevTools} from  "@redux-devtools/extension";
 import thunk from "redux-thunk";
-import storage from 'redux-persist/lib/storage'
+//import storage from 'redux-persist/lib/storage'
 // import { persistReducer, persistStore } from "redux-persist";
 import createSagaMiddleware from "redux-saga";
 import logger from "redux-logger";

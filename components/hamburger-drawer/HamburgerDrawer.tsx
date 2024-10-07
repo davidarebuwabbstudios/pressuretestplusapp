@@ -1,4 +1,6 @@
 import * as React from "react";
+import { useNavigation } from '@react-navigation/native';
+import { useSelector, useDispatch } from "react-redux";
 import { View, Text, ImageBackground, TouchableOpacity, Image } from "react-native";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
@@ -15,7 +17,7 @@ import ConnectLoggerScreen from "../../screens/connect-logger/ConnectLoggerScree
 import ContactScreen from "../../screens/contact/ContactScreen";
 import SettingsScreen from "../../screens/settings/SettingsScreen";
 import LogoutModal from "../logout/LogoutModal";
-
+import * as authActions from  "../../core/actions/authActions";
 import BottomTabs from "../bottom-tab-menu/BottomTabMenu";
 
 const logo = require("../../assets/bootsplash/main-logo.png");
@@ -40,10 +42,17 @@ const HamburgerDrawer = () => {
 };
 
 function HamburgerMenuDrawer() {
+  const dispatch = useDispatch()
+  const { isAuthenticated } = useSelector((state) => state.auth);
   const Drawer = createDrawerNavigator();
   const Tab = createBottomTabNavigator();
   const Stack = createNativeStackNavigator();
+  const navigation = useNavigation();
 
+
+  const handleLogout = () => {
+    dispatch(authActions.setAuthToken(false));
+}
   const screenOptionStyle = {
     headerShown: false
   };
@@ -127,7 +136,6 @@ function HamburgerMenuDrawer() {
         initialParams={{screen: 'HomeScreen'}}
         options={{
           drawerIcon: ({ color, focused }) => <Icon name="plus-circle" size={20} color={`${focused ? color : '#404040'}`}/>,
-          title: 'New Test',
           headerStyle: {
             backgroundColor: '#53A020',
           },
@@ -144,7 +152,6 @@ function HamburgerMenuDrawer() {
         initialParams={{screen: 'RunningTestsScreen'}}
         options={{
           drawerIcon: ({ color, focused }) => <Icon name="tachometer" size={20} color={`${focused ? color : '#404040'}`}/>,
-          title: 'Running Tests',
           headerStyle: {
             backgroundColor: '#53A020',
           },
@@ -161,7 +168,6 @@ function HamburgerMenuDrawer() {
         initialParams={{screen: 'CompletedTestsScreen'}}
         options={{
           drawerIcon: ({ color, focused }) => <Icon name="check-circle" size={20} color={`${focused ? color : '#404040'}`}/>,
-          title: 'Completed Tests',
           headerStyle: {
             backgroundColor: '#53A020',
           },
@@ -178,7 +184,6 @@ function HamburgerMenuDrawer() {
         initialParams={{screen: 'ConnectLoggerScreen'}}
         options={{
           drawerIcon: ({ color, focused }) => <MaterialCommunityIcons name="briefcase-plus-outline" size={20} color={`${focused ? color : '#404040'}`}/>,
-          title: 'Connect Logger',
           headerStyle: {
             backgroundColor: '#53A020',
           },
@@ -195,7 +200,6 @@ function HamburgerMenuDrawer() {
         initialParams={{screen: 'ContactScreen'}}
         options={{
           drawerIcon: ({ color, focused }) => <MaterialIcons name="call" size={20} color={`${focused ? color : '#404040'}`}/>,
-          title: 'Contact Us',
           headerStyle: {
             backgroundColor: '#53A020',
           },
@@ -212,7 +216,6 @@ function HamburgerMenuDrawer() {
         initialParams={{screen: 'SettingsScreen'}}
         options={{
           drawerIcon: ({ color, focused }) => <Icon name="gear" size={20} color={`${focused ? color : '#404040'}`}/>,
-          title: 'Settings',
           headerStyle: {
             backgroundColor: '#53A020',
           },
@@ -229,7 +232,6 @@ function HamburgerMenuDrawer() {
         initialParams={{screen: 'LogoutScreen'}}
         options={{
           drawerIcon: ({ color, focused }) => <MaterialIcons name="logout" size={20} color={`${focused ? color : '#404040'}`}/>,
-          title: 'Logout',
           headerStyle: {
             backgroundColor: '#53A020',
           },
@@ -239,13 +241,16 @@ function HamburgerMenuDrawer() {
           },
           headerTitleAlign: 'left'
         }}
+        listeners={({ navigation }) => ({ 
+          state: (e) => {
+             if (e.data.state.index === 6) {
+                // 6 is index of logout item in drawer
+                handleLogout()
+             }
+          }
+        })
+      }
       />
-      {/* <Drawer.Screen
-        name="contactUs"
-        component={ContactStackNavigator}
-        options={{ headerShown: true, title: "Contact Us" }}
-      /> */}
-      {/* <Drawer.Screen name="Tabs" component={BottomTabs} /> */}
     </Drawer.Navigator>
   );
 }

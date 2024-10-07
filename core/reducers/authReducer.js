@@ -8,6 +8,7 @@ const {
     REGISTER_USER_REQUEST,
     REGISTER_USER_SUCCESS,
     REGISTER_USER_FAILURE,
+    SET_AUTH_TOKEN,
 } = require('../actions/authActions').constants;
 
 const InitialState = Record({
@@ -77,6 +78,13 @@ export default function authReducer(state = initialState, {type, payload}) {
             .set('isAuthenticated', false)
             .set('message',payload)
             .set('error', payload);
+        }
+
+        case SET_AUTH_TOKEN: {
+            console.log('SET_AUTH_TOKEN')
+            return state.set('isFetching', false)
+            .set('isAuthenticated',payload)
+            .set('userToken',null);
         }
 
         default:
