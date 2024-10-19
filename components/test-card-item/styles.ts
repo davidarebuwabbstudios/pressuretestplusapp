@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     lineHeight: 20,
     width: 73,
     color: "rgba(0, 0, 0, 0.87)",
-    textAlign: "center"
+    textAlign: "center",
   },
   typography3: {
     width: 156,

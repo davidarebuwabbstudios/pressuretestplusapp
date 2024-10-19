@@ -1,6 +1,7 @@
 import * as React from "react";
 import { View, Text, Pressable, Image } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import styles from "./styles";
 
@@ -11,6 +12,11 @@ type TesItemProps = {
     icon: string
 };
 
+const statusIcons = {
+    running: "timeline-clock-outline",
+    failed: "pipe-leak",
+    success: "check"
+}
 
 function TestCardItem() { //{title}: TesItemProps)
   const [active, setActive] = React.useState("");
@@ -20,7 +26,7 @@ function TestCardItem() { //{title}: TesItemProps)
       <Pressable style={styles.cardShadowBox} onPress={() => {}}>
           <View style={styles.cardHeader}>
             <View style={[styles.mdipipeLeak, styles.mdipipeLeakSpaceBlock]}>
-            <Icon name="tachometer" size={20} color='#404040'/>
+            <MaterialCommunityIcons name="timeline-clock-outline" size={20} color='#404040'/>
             </View>
             <View>
               <View>
@@ -31,8 +37,7 @@ function TestCardItem() { //{title}: TesItemProps)
               </View>
             </View>
             <View style={styles.typography3}>
-              <Text style={[styles.body12, styles.bodyTypo]}>{`181 minutes 
-remaining`}</Text>
+              <Text numberOfLines={3} style={[styles.body12, styles.bodyTypo]}>{`181 minutes`}</Text>
             </View>
           </View>
         </Pressable>

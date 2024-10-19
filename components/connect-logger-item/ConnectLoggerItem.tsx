@@ -1,6 +1,8 @@
 import * as React from "react";
 import { View, Text, Pressable, Image } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+
 
 import styles from "./styles";
 
@@ -20,7 +22,7 @@ function ConnectLoggerItem() { //{title}: TesItemProps)
         <View style={styles.itemMaster}>
           <View style={[styles.content, styles.contentSpaceBlock]}>
             <View style={styles.lablesFlexBox}>
-            <Icon name="tachometer" size={20} color='#404040'/>
+            <MaterialCommunityIcons name="power-plug" size={20} color='#404040'/>
 
               <View style={styles.contentStart}>
                 <Text style={[styles.listItemTitle, styles.listItemTypo]}>

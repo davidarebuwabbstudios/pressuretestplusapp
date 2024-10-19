@@ -7,13 +7,11 @@ import { useField, ErrorMessage } from "formik";
 interface CustomTextInputProps extends TextInputProps {
   label: string;
   name: string;
-  multiline: boolean;
 }
 
-const InputText: React.FC<CustomTextInputProps> = ({
+const ToolTipTextField: React.FC<CustomTextInputProps> = ({
   label,
   name,
-  multiline = false,
   ...props
 }) => {
   const [value, meta, helpers] = useField(name);
@@ -62,7 +60,7 @@ const InputText: React.FC<CustomTextInputProps> = ({
           }}
           onChangeText={handleChange}
           value={meta.value}
-          multiline={multiline}
+          right={<TextInput.Icon icon="information" />}
         />
        
       </View>
@@ -70,4 +68,4 @@ const InputText: React.FC<CustomTextInputProps> = ({
   );
 };
 
-export default InputText;
+export default ToolTipTextField;
